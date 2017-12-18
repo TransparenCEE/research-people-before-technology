@@ -1,7 +1,9 @@
-@import 'components/font';
-@import 'components/variables';
-@import 'components/html';
-@import 'components/parallax';
+---
+---
+@import 'font';
+@import 'variables';
+@import 'html';
+@import 'parallax';
 
 
 .wrapper-container {
@@ -415,4 +417,4 @@ p.big-italic {
 
 
 
-@import 'components/media';
+@import 'media';
