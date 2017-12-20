@@ -102,11 +102,17 @@
   }
   h1, .primary-title {
     font-size: 44px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+    font-family: $main-title;
   }
   .second-title {
     font-size: 20px;
+    margin-bottom: 10px;
   }
+}
+
+.border-top {
+  margin-bottom: 10px;
 }
 
 .blocks {
@@ -119,7 +125,8 @@
 }
 
 .content > p {
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 div.border_top {
@@ -127,7 +134,22 @@ div.border_top {
 }
 
 p.author {
-  text-align: center
+  text-align: center;
+}
+
+p.author > b {
+  font-family: $author-title;
+  font-style: normal;
+
+  a, a:hover, a:visited {
+    color: #7dc8b4;
+  }
+}
+
+
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: #7dc8b4;
 }
 
 p.bold {
