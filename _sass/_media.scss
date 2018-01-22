@@ -2,11 +2,10 @@
   Responsive Grid Media Queries - 1280, 1024, 768, 480
    1280-1024   - desktop (default grid)
    1024-768    - tablet landscape
-   768-480     - tablet
+   768-480     - tablet 
    480-less    - phone landscape & smaller
 --------------------------------------------*/
 @media all and (min-width: 1024px) and (max-width: 1280px) {
-
   .section {
     .picture {
       flex: 1 0 25%;
@@ -17,12 +16,8 @@
   }
 
 }
-
+ 
 @media all and (min-width: 768px) and (max-width: 1024px) {
-
-  .background-parallax {
-    background-size: 250%;
-  }
 
   h1, .primary-title {
     font-size: 38px !important;
@@ -71,12 +66,8 @@
 }
 
 }
-
-@media all and (min-width: 480px) and (max-width: 768px) {
-
-  .background-parallax {
-    background-size: 400%;
-  }
+ 
+@media all and (min-width: 480px) and (max-width: 768px) { 
 
   h1, .primary-title {
     font-size: 32px !important;
@@ -119,13 +110,8 @@
 }
 
 }
-
+ 
 @media all and (max-width: 480px) {
-
-  .background-parallax {
-    background-size: 400%;
-  }
-
   .header .header-logo {
     width: inherit;
   }
@@ -179,4 +165,10 @@
   -webkit-animation-name: none;
   animation-name: none;
 }
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .background-parallax {
+        background-attachment: scroll;
+    }
 }
